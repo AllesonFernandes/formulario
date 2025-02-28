@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <ul>
+                <li><button class="nav-button">Início</button></li> 
+                <li><button class="nav-button">Sobre</button></li>
+                <li><button class="nav-button">Contato</button></li>
+            </ul>
+        </div>
+        <div class="cards">
+            <div class="card"></div>
+            <div class="form">
+            <input type="username" placeholder="Nome">
+            <input type="email" placeholder="Email">
+            <input type="text" placeholder="Contato" class="contato" id="contato" maxlength="15">
+            <input type="text" placeholder="CPF" class="cpf" id="cpf" maxlength="14">
+            <input class="password" type="password" placeholder="Senha" id="senha">
+            <input class="same-password" type="password" placeholder="Confirme sua senha" id="confirme">
+            <button class="submit" onclick="verificaSenha()">Cadastrar</button>
+            </div>
+            
+        </div>
+    </div>
+    <script src="/main.js"></script>
+</body>
+</html>
